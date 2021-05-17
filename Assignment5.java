@@ -33,7 +33,7 @@ public class Assignment5
         int age1 = list.get(myAge);
          for(int i = 0; i < list.size();i++){
             if(list.get(myAge)>age1) 
-            age1 =myAge;
+            age1 = myAge;
         }
     }
     
