@@ -29,12 +29,12 @@ public class Assignment5
             list2.add(list.get(i));
         }
     }
-    public String findMin(ArrayList<Person> list){
-        int age1 = list.get(myAge);
-         for(int i = 0; i < list.size();i++){
-            if(list.get(myAge)>age1) 
-            age1 =myAge;
+    public static String findMin(ArrayList<Person> list) {
+        Person youngest = list.get(0);
+        for(Person person : list) {
+            if(person.getAge() < youngest.getAge()) youngest = person;
         }
+        return youngest.getName();
     }
     
 }
