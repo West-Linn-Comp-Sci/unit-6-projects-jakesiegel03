@@ -2,13 +2,22 @@
 public class Person
 {
     // instance variables - replace the example below with your own
-    private String myAge;
+    private int myAge;
     private String myName;
     
-    public Person(String myAge1, String myName1)
+    public Person(int myAge1, String myName1)
     {
         myAge = myAge1;
         myName = myName1;
+    }
+    
+    
+    public int getAge(){
+        return myAge;
+    }
+    
+    public String getName(){
+        return myName;
     }
 
     
